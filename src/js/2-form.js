@@ -29,8 +29,10 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
-  console.log("Submitted data:", formData);
+  console.log(formData);
 
   formData = { email: "", message: "" };
   form.reset();
+  localStorage.clear();
+  
 });
